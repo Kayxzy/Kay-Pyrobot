@@ -9,7 +9,7 @@ from config import SUDO_USERS
 
 @Client.on_message(filters.me & filters.command(["delspam", "deletespam"], [".", "!", "/"]))
 async def statspam(client: Client, message: Message):
-    zaid = await message.reply_text("⚡ Usage:\n /delspam 10 Umm")
+    kay = await message.reply_text("⚡ Usage:\n /delspam 10 Umm")
     quantity = message.command[1]
     spam_text = ' '.join(message.command[2:])
     quantity = int(quantity)
@@ -25,7 +25,7 @@ async def statspam(client: Client, message: Message):
 
 @Client.on_message(filters.me & filters.command(["spam", "spamming"], [".", "!", "/"]))
 async def sspam(client: Client, message: Message):
-    zaid = await message.reply_text("⚡ Usage:\n /spam 10 Umm")
+    kay = await message.reply_text("⚡ Usage:\n /spam 10 Umm")
     quantity = message.command[1]
     spam_text = ' '.join(message.command[2:])
     quantity = int(quantity)
