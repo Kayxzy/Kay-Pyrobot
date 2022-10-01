@@ -22,15 +22,15 @@ usage = f"** ❌ Wrong Usage ❌** \n Type `.help delayspam`"
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["fspam", "fastspam"], [".", "!"]))
 @Client.on_message(filters.me & filters.command(["fspam", "fastspam"], ["."]))
 async def spam(xspam: Client, e: Message):
-    warn = await e.reply_text("**Note:** Don't Blame to @ZaidUserBot If IDs Get ban -!")
+    warn = await e.reply_text("**Note:** Don't Blame to @KayUserBot If IDs Get ban -!")
     await asyncio.sleep(3)
     await warn.delete()
-    Zaid = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 1)
-    if len(Zaid) == 2:
-       counts = int(Zaid[0])
+    Kay = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 1)
+    if len(Kay) == 2:
+       counts = int(Kay[0])
        if int(e.chat.id) in GROUP:
             return await e.reply_text("**Sorry !! i Can't Spam Here.**")
-       msg = str(Zaid[1])
+       msg = str(Kay[1])
        if re.search(Owners.lower(), msg.lower()):
             return await e.reply("**Sorry !!**")
        if e.reply_to_message:
