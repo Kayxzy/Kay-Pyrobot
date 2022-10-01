@@ -1,5 +1,3 @@
-#from Rexoma and Rizoel SpamBot
-#© By Itz-zaid
 import asyncio
 from pyrogram import filters, Client
 from handlers.help import *
@@ -17,14 +15,14 @@ from handlers.cache.data import *
 from config import SUDO_USERS
 from main import ALIVE_PIC
 
-Zaid = f"**꧁ 𒈞zαι∂ υѕєявσт𒈞꧂**\n\n"
-Zaid += f"━───────╯•╰───────━\n"
-Zaid += f"➠ **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.10.5`\n"
-Zaid += f"➠ **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ** : `{__version__}`\n"
-Zaid += f"➠ **ᴠᴇʀsɪᴏɴ**  : `{2.0}`\n"
-Zaid += f"➠ **ᴄʜᴀɴɴᴇʟ** : [❝𝐂𝐥𝐢𝐜𝐤❞](https://t.me/TheUpdatesChannel)\n"
-Zaid += f"━───────╮•╭───────━\n\n"
-Zaid += f"➠ **𒆜ʍǟӄɛ ʏօʊʀ օառ 𒆜:** [❝𝐂𝐥𝐢𝐜𝐤❞](https://gitHub.com/Itz-Zaid/Zaid-Userbot)"
+Kay = f"**Kay - Userbot**\n\n"
+Kay += f"━───────╯•╰───────━\n"
+Kay += f"➠ **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.10.5`\n"
+Kay += f"➠ **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ** : `{__version__}`\n"
+Kay += f"➠ **ᴠᴇʀsɪᴏɴ**  : `{2.0}`\n"
+Kay += f"➠ **ᴄʜᴀɴɴᴇʟ** : [Click](https://t.me/KayProject)\n"
+Kay += f"━───────╮•╭───────━\n\n"
+Kay += f"➠ **Own:** [Click](https://gitHub.com/Kayxzy/Kay-Userbot)"
 
 
 usage = f"** ❌ Wrong Usage ❌** \n Type `.help advanced`"
@@ -35,9 +33,9 @@ import sys
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["help"], [".", "!"]))
 async def help(_, e: Message):
-        zaid = e.text.split(" ")
-        if len(zaid) > 1:
-            helping = zaid[1]
+        kay = e.text.split(" ")
+        if len(kay) > 1:
+            helping = kay[1]
             if helping.lower() == "spam":
                 await e.reply(spam_help)
             elif helping.lower() == "dm":
@@ -94,7 +92,7 @@ syntax:
 syntax:
 ‣ `.eye`
 
-**꧁ 𒈞zαι∂ υѕєявσт𒈞꧂**
+**Kay - Userbot**
 ➖➖➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -115,7 +113,7 @@ command:
 ✘**Dm Raid:** raid in Dm of Any individual Users
 ‣ .dmraid "count" "username or user id"
 
-**꧁ 𒈞zαι∂ υѕєявσт𒈞꧂**
+**Kay - Userbot**
 ➖➖➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -126,7 +124,7 @@ join_help = f"""
 
 ‣.join "private/public Chat invite link or username"
 
-**꧁ 𒈞zαι∂ υѕєявσт𒈞꧂**
+**Kay - Userbot**
 ➖➖➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -136,7 +134,7 @@ leave_help = f"""
 
 ‣ `.leave` "group Username or chat user id"
 
-**꧁ 𒈞zαι∂ υѕєявσт𒈞꧂**
+**Kay - Userbot**
 ➖➖➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -148,7 +146,7 @@ cast_help = f"""
 
 ‣ `.broadcast` "Reply to a message"
 
-**꧁ 𒈞zαι∂ υѕєявσт𒈞꧂**
+**Kay - Userbot**
 ➖➖➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -162,7 +160,7 @@ Specially designed for inviting active members.
 
 ‣ `.inviteall` "group Username or chat user id"
 
-**꧁ 𒈞zαι∂ υѕєявσт𒈞꧂**
+**Kay - Userbot**
 ➖➖➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -176,7 +174,7 @@ userbot_help = f"""
 
 ‣ .restart : To Restart Your Bots
 
-**꧁ 𒈞zαι∂ υѕєявσт𒈞꧂**
+**Kay - Userbot**
 ➖➖➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -190,7 +188,7 @@ command:
   ‣`.dreplyraid` "userid To deactivate replyraid (abusive words)"
 
 
-**꧁ 𒈞zαι∂ υѕєявσт𒈞꧂**
+**Kay - Userbot**
 ➖➖➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -203,7 +201,7 @@ commands:
 2) .setbio "coustom Bio"
 3) .setpic "reply to media"
 
-**꧁ 𒈞zαι∂ υѕєявσт𒈞꧂**
+**Kay - Userbot**
 ➖➖➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -224,7 +222,7 @@ help_menu = f"""
 ✘**Type** .help "category" **to get all syntax in that category and its usage**
 ✘**Example**: `.help replyraid`
 
-**꧁ 𒈞zαι∂ υѕєявσт𒈞꧂**
+**Kay - Userbot**
 ➖➖➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -233,15 +231,15 @@ help_menu = f"""
 @Client.on_message(filters.me & filters.command(["delayspam"], ["."]))
 async def delayspam(xspam: Client, e: Message): 
     kkk = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-    Zaid = kkk[1:]
-    if len(Zaid) == 2:
-       counts = int(Zaid[0])
+    Kay = kkk[1:]
+    if len(Kay) == 2:
+       counts = int(Kay[0])
        if int(e.chat.id) in GROUP:
             return await e.reply_text("**Sorry !! i Can't Spam Here.**")
-       msg = str(Zaid[1])
+       msg = str(Kay[1])
        if re.search(Owners.lower(), msg.lower()):
             return await e.reply("**Sorry !!**")
-       sleeptime = float(Zaid[0])
+       sleeptime = float(Kay[0])
        if e.reply_to_message:
           reply_to_id = e.reply_to_message.message_id
           for _ in range(counts):
@@ -314,19 +312,19 @@ async def pornspam(xspam: Client, e: Message):
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["alive"], [".", "!"]))
 async def hello(client: Client, message: Message):
-    await client.send_photo(message.chat.id, ALIVE_PIC, caption=Zaid)
+    await client.send_photo(message.chat.id, ALIVE_PIC, caption=(Kay)
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["join"], [".", "!", "/"]))
 async def jhoin(client: Client, message: Message):
-    zaid = message.text[6:]
+    kay = message.text[6:]
     count = 0
-    if not zaid:
+    if not kay:
         return await message.reply_text("Need a chat username or invite link to join.")
-    if zaid.isnumeric():
+    if kay.isnumeric():
         return await message.reply_text("Can't join a chat with chat id. Give username or invite link.")
     try:
-        await client.join_chat(zaid)
+        await client.join_chat(kay)
         await message.reply_text(f"**Joined**")
     except Exception as ex:
         await message.reply_text(f"**ERROR:** \n\n{str(ex)}")
@@ -334,14 +332,14 @@ async def jhoin(client: Client, message: Message):
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["leave", "left"], [".", "!", "/"]))
 async def leasse(client: Client, message: Message):
-    zaid = message.text[6:]
+    kay = message.text[6:]
     count = 0
-    if not zaid:
+    if not kay:
         return await message.reply_text("Need a chat username or invite link to leave.")
-    if zaid.isnumeric():
+    if kay.isnumeric():
         return await message.reply_text("Can't leave a chat with chat id. Give username or invite link.")
     try:
-        await client.leave_chat(zaid)
+        await client.leave_chat(kay)
         await message.reply_text(f"**Lefted**")
     except Exception as ex:
         await message.reply_text(f"**ERROR:** \n\n{str(ex)}")
@@ -353,7 +351,7 @@ async def skkkspam(client: Client, message: Message):
     quantity = message.command[1]
     spam_text = ' '.join(message.command[2:])
     quantity = int(quantity)
-    msg = str(Zaid[1])
+    msg = str(Kay[1])
     if re.search(Owners.lower(), msg.lower()):
         return await e.reply("**Sorry !!**")
     if int(message.chat.id) in GROUP:
@@ -377,12 +375,12 @@ async def skkkspam(client: Client, message: Message):
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], [".", "!", "/"]))
 @Client.on_message(filters.me & filters.command(["raid"], ["."]))
 async def raid(xspam: Client, e: Message):  
-      Zaid = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-      if len(Zaid) == 2:
-          counts = int(Zaid[0])
+      Kay = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
+      if len(Kay) == 2:
+          counts = int(Kay[0])
           if int(e.chat.id) in GROUP:
                return await e.reply_text("**Sorry !! i Can't Spam Here.**")
-          ok = await xspam.get_users(Zaid[1])
+          ok = await xspam.get_users(Kay[1])
           id = ok.id
 #          try:
 #              userz = await xspam.get_users(id)
@@ -405,7 +403,7 @@ async def raid(xspam: Client, e: Message):
                     await asyncio.sleep(0.10)
       elif e.reply_to_message:
           msg_id = e.reply_to_message.message_id
-          counts = int(Zaid[0])
+          counts = int(Kay[0])
           if int(e.chat.id) in GROUP:
                return await e.reply_text("**Sorry !! i Can't Spam Here.**")
           user_id = e.reply_to_message.from_user.id
@@ -460,28 +458,28 @@ from helpers.adminhelpers import CheckAdmin
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["replyraid", "rraid"], [".", "!"]))
 @Client.on_message(filters.command("replyraid", ["."]) & filters.me)
 async def gban(app: Client, message):
-    Zaid = await message.reply_text("**Processing**")
+    Kay = await message.reply_text("**Processing**")
     reply = message.reply_to_message
     if reply:
         user = reply.from_user["id"]
     else:
         user = get_arg(message)
         if not user:
-            await Zaid.edit("**Whome should I replyraid?**")
+            await Kay.edit("**Whome should I replyraid?**")
             return
     get_user = await app.get_users(user)
     mee= await app.get_me()
     if get_user.id == mee.id:
-        await Zaid.edit("`Jaa Na Lawde Kahe Dimag Kha rha? Khudpe Raid kyu laga rha?`")
+        await Kay.edit("`Jaa Na Lawde Kahe Dimag Kha rha? Khudpe Raid kyu laga rha?`")
         return
     if int(get_user.id) in VERIFIED_USERS:
-        await Zaid.edit("Chal Chal baap Ko mat sikha")
+        await Kay.edit("Chal Chal baap Ko mat sikha")
         return
     elif int(get_user.id) in SUDO_USERS:
-        await Zaid.edit("Abe Lawde that guy part of my devs.")
+        await Kay.edit("Abe Lawde that guy part of my devs.")
         return
     await rraid_user(get_user.id)
-    await Zaid.edit(f"**Successfully Reply Raid Started {get_user.first_name}!**")
+    await Kay.edit(f"**Successfully Reply Raid Started {get_user.first_name}!**")
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["dreplyraid", "drraid"], [".", "!"]))
 @Client.on_message(filters.command("dreplyraid", ["."]) & filters.me)
