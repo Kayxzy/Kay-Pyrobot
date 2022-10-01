@@ -41,10 +41,10 @@ async def restart(message: Message, restart_type):
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["restart", "reboot"], [".", "!"]))
 async def restart_get(client: Client, message: Message):
     try:
-        zaid = await message.reply_text("**Restarting userbot...**")
+        kay = await message.reply_text("**Restarting userbot...**")
         await restart(message, restart_type="restart")
     except:
-        await zaid.edit_text("**An error occured...**")
+        await kay.edit_text("**An error occured...**")
 
 
 # Update
@@ -52,7 +52,7 @@ async def restart_get(client: Client, message: Message):
 async def update(client: Client, message: Message):
     try:
         await message.edit('**Updating...**')
-        link = "https://github.com/ITZ-ZAID/ZAID-USERBOT/archive/refs/heads/main.zip"
+        link = "https://github.com/Kayxzy/Kay-Userbot/archive/refs/heads/main.zip"
         wget.download(link, 'temp/archive.zip')
 
         with zipfile.ZipFile("temp/archive.zip", "r") as zip_ref:
