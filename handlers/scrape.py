@@ -7,12 +7,12 @@ from handlers.help import *
 
 @Client.on_message(filters.command(["inviteall", "kidnapall"], [".", "!"]) & filters.me)
 async def inv(client: Client, message: Message):
-    zaid = await message.reply_text("⚡ Gime Title also\n ex: /inviteall @testing")
+    kay = await message.reply_text("⚡ Gime Title also\n ex: /inviteall @testing")
     text = message.text.split(" ", 1)
     queryy = text[1]
     chat = await client.get_chat(queryy)
     tgchat = message.chat
-    await zaid.edit_text(f"inviting users from {chat.username}")
+    await kay.edit_text(f"inviting users from {chat.username}")
     async for member in client.iter_chat_members(chat.id):
         user= member.user
         zxb= ["online", "offline" , "recently", "within_week"]
