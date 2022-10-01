@@ -2,7 +2,7 @@ import re
 from pyrogram import filters, Client
 
 from helpers.pyrohelper import get_arg, welcome_chat
-import helpers.mongo.welcomedb as Zaid
+import helpers.mongo.welcomedb as Kay
 from main import LOG_GROUP
 
 
@@ -11,13 +11,13 @@ LOG_CHAT = LOG_GROUP
 
 @Client.on_message(filters.command("clearwelcome", ["."]) & filters.me)
 async def welcome(client, message):
-    await Zaid.clear_welcome(str(message.chat.id))
+    await Kay.clear_welcome(str(message.chat.id))
     await message.edit("**I am sulking not to say hello anymore :(**")
 
 
 @Client.on_message(filters.create(welcome_chat) & filters.new_chat_members, group=-2)
 async def new_welcome(app: Client, message):
-    msg_id = await Zaid.get_welcome(str(message.chat.id))
+    msg_id = await Kay.get_welcome(str(message.chat.id))
     caption = ""
     men = ""
     msg = await app.get_messages(LOG_CHAT, msg_id)
@@ -79,7 +79,7 @@ async def setwelcome(app: Client, message):
         return
     frwd = await app.copy_message(LOG_CHAT, message.chat.id, reply.message_id)
     msg_id = frwd.message_id
-    await Zaid.save_welcome(str(message.chat.id), msg_id)
+    await Kay.save_welcome(str(message.chat.id), msg_id)
     await message.edit("**Welcome message has been saved.**")
 
 
