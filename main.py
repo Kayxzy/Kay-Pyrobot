@@ -455,5 +455,5 @@ if bot50:
 
 idle()
 
-print("🎉 Successfully Deployed 🎉 @Timesisnotwaiting")
-print("Enjoy! Do visit @Superiro_Bots")
+print("🎉 Successfully Deployed 🎉")
+print("Enjoy! Do visit")
